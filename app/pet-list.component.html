@@ -1,0 +1,22 @@
+<header 
+    [ngClass]="{'type-dog':type === 'Dogs', 'type-cat':type === 'Cats'}">
+    <h2>{{type}}</h2>
+    <div>{{ pets | categoryList }}</div>
+</header>
+<section>
+  <foster-pet
+    [ngClass]="{'type-dog': pet.type==='Dogs', 'type-cat':pet.type==='Cats'}"
+    *ngFor="let pet of pets"
+    [pet]="pet"
+    (delete)="onPetDelete($event)"></foster-pet>
+</section>
+<footer>
+
+
+    <a routerLink="/add">
+    <img src="media/01.png" class="icon" />
+  </a>
+    <div class="moreInfo">
+       Get more information about fostering or a adopting a pet at <a _ngcontent-phk-3="" href="ThePetRepublic.com/Foster">ThePetRepublic.com/Foster/</a>
+    </div>
+</footer>
