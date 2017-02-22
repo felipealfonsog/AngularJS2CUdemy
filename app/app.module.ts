@@ -39,5 +39,3 @@ import { routing } from './app.routing';
   ]
 })
 export class AppModule {}
-
-// Development of the course
