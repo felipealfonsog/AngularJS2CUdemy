@@ -1,33 +1,7 @@
-:host {
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100%;
+h1 {
+  color: #ffffff
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  width: 68px;
-  background-color: white;
-}
-nav .icon {
-  width: 48px;
-  height: 48px;
-  margin: 10px;
-}
-section {
-  width: 100%;
-  background-color: grey;
-}
-section > header {
-  color: #ffffff;
-  padding: 10px;
-}
-section > header > h1 {
-  font-size: 2em;
-}
-section > header .description {
-  font-style: italic;
-}
-footer{
-
+.description {
+  font-style:  italic;
+  color: grey;
 }

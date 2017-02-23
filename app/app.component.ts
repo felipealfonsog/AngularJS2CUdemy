@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
-@Component({
+@Component ({
   selector: 'shelter-app',
-  templateUrl: 'app/app.component.html',
+  templateURL: 'app/app.component.html',
   styleUrls: ['app/app.component.css']
+
 })
-export class AppComponent { }
+
+export class AppComponent {}

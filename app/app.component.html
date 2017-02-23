@@ -1,21 +1,32 @@
-<nav>
-  <a routerLink="/">
-    <img src="media/04.png" class="icon" />
-  </a>
-  <a routerLink="/Cats">
-    <img src="media/03.png" class="icon" />
-  </a>
-  <a routerLink="/Dogs">
-    <img src="media/02.png" class="icon" />
-  </a>
-</nav>
-<section>
-  <header>
-    <h1>Current Foster Animals</h1>
-    <p class="description">    Free Shelter Software - Help Make Your City A NOKILL City Foster Or Adopt A Pet Today.
-    </p>
-  </header>
-  <router-outlet></router-outlet>
-</section>
+<html>
 
+<head>
+  <base href="/">
+  <title>My Rescue - The Pet Republic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <link rel="icon" type="image/png" href="media/dog1.png" />
 
+  <link href="resets.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: #32435b;
+    }
+  </style>
+  <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+
+<body>
+  <shelter-app>Loading...</shelter-app>
+</body>
+
+</html>
